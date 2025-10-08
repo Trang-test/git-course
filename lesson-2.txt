@@ -1,8 +1,8 @@
 1. Các lệnh:
-git init: tạo một repository Git hoặc bắt đầu quản lý một phiên bản mã nguồn của một dự án đầu 
+git init: khởi tạo thư mục được quản lý bởi git
 git add <file_name> thêm file/tệp đã thay đổi vào vùng chờ (staging area) để chuẩn bị cho việc commit
-git add . : thêm các tệp/ thư mục đã thay đổi vào vùng chờ (staging area) để chuẩn bị cho việc commit
-git commit -m "message" : tạo một commit, tức là một phiên bản mã nguồn của bạn tại thời điểm cụ thể
+git add . : thêm toàn bộ tệp/ thư mục đã thay đổi vào vùng chờ (staging area) để chuẩn bị cho việc commit
+git commit -m "message" : tạo một commit với nội dung là "messgae", tức là một phiên bản mã nguồn của bạn tại thời điểm cụ thể
 2. 
 a. Tạo 3 file: file1, file2, file3
 b. Chạy lệnh: git init
