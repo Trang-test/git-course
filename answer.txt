@@ -1,0 +1,3 @@
+a. Câu lệnh để cài đặt name là: git config --global user.name "Tên_của_bạn"
+Câu lệnh để cài đặt email là: git config --global user.email "Email_của_bạn@example.com"
+b. Set up lại name : git config --global user.name "Udemy - Jennie"

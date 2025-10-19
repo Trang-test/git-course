@@ -1,0 +1,84 @@
+bai 1:
+git commit --amend: để sửa commit message qua giao diện VIM
+git commit --amend -m"<message>": đổi trực  tiếp commit message ko đi qua giao diện VIM
+git restore --staged <file> : chuyển file từ vùng staging về vùng working directory
+git reset HEAD~1: chuyển 1 commit ở reposity về vùng working directory
+
+bài 2:  1 folder lesson-3 . 
+a. Tạo 3 file file1, file2, file3
+
+i. Vùng working: K
+ii. Vùng staging: K
+iii. Vùng repository: K
+
+b. Chạy lệnh: git init
+
+i. Vùng working: file1, file2, file3
+ii. Vùng staging: K
+iii. Vùng repository: K
+
+c. Chạy lệnh: git commit -m"init project"
+
+i. Vùng working: file1, file2, file3
+ii. Vùng staging: K
+iii. Vùng repository: K
+
+d. Chạy lệnh: git add file1
+
+i. Vùng working: fie2, file3
+ii. Vùng staging: file1
+iii. Vùng repository: K
+
+e. Chạy lệnh: git commit -m"add file"
+
+i. Vùng working: fie2, file3
+ii. Vùng staging: K
+iii. Vùng repository: file1
+
+f. Chạy lệnh: git add .
+
+i. Vùng working: K
+ii. Vùng staging: file2, file3
+iii. Vùng repository: file1
+
+g. chạy lệnh: git restore --staged file2
+
+i. Vùng working: fie2
+ii. Vùng staging:  file3
+iii. Vùng repository: file1
+
+h. chạy lệnh: git commit -m"add all files"
+
+i. Vùng working: file2
+ii. Vùng staging: K
+iii. Vùng repository: file1, file3
+
+i. Chạy lệnh: git reset HEAD~1
+
+i. Vùng working: file2, file3
+ii. Vùng staging: K
+iii. Vùng repository: file1
+
+Bai 3:  1 folder "lesson-3-git"
+a. khoi tao init 
+i. Vùng working: k
+ii. Vùng staging: K
+iii. Vùng repository: k
+b. tạo files: file1.txt, file2.txt, oops/file3.txt
+i. Vùng working: file1.txt, file2.txt, oops/file3.txt
+ii. Vùng staging: K
+iii. Vùng repository: k
+c. Thêm file .gitignore, thêm vài hai dong:
+1. file1.txt
+2. oops/file3.txt
+i. Vùng working: file1.txt, file2.txt, oops/file3.txt
+ii. Vùng staging: K
+iii. Vùng repository: k
+d. chạy lệnh git add .
+i. Vùng working: K
+ii. Vùng staging: file2.txt
+iii. Vùng repository: k
+e. Chạy lênh: git commit -m"init project"
+i. Vùng working: K
+ii. Vùng staging: k
+iii. Vùng repository: file2.txt
